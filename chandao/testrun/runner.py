@@ -1,6 +1,7 @@
 __author__ = 'Administrator'
 from chandao.testrun import HTMLTestRunner_cn
 import sys
+import time
 import unittest
 import os
 project_dir = r"C:\Users\Administrator\PycharmProjects\test"
