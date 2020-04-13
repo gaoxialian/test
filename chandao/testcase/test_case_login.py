@@ -32,7 +32,8 @@ class TestLogin(StartEnd):
     def test_login_case2(self):
         self.login.login(is_forget = True)
         result = self.login.is_refresh_exsit()
-        self.assertTrue(result)
+        # self.assertTrue(result)
+        self.assertTrue(False)
 
 
 if __name__ == '__main__':
