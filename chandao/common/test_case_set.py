@@ -10,13 +10,13 @@ class StartEnd(unittest.TestCase):
     def setUpClass(cls):
         cls.driver = webdriver.Chrome()
         cls.driver.maximize_window()
-        cls.driver.get("http://127.0.0.1:82/zentao/user-login-L3plbnRhby8=.html")
+        cls.driver.get("http://127.0.0.1:81/zentao/user-login-L3plbnRhby8=.html")
         cls.login = LoginPage(cls.driver)
         cls.bug = AddBugPage(cls.driver)
         cls.login.login()
 
     def setUp(self):
-       self.driver.get("http://127.0.0.1:82/zentao/my/")
+       self.driver.get("http://127.0.0.1:81/zentao/my/")
 
     @classmethod
     def tearDownClass(cls):
