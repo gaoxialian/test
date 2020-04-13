@@ -24,12 +24,14 @@ class TestLogin(StartEnd):
     '''
     @ddt.idata(data)
     def test_login_case1(self,data):
+        '''登录根据excel中的数据进行输入'''
         self.login.login(data['user'],data['pwd'],data['expected'])
         result = self.login.get_login_name()
         self.assertTrue(result == data['expected'])
 
     ''' 登录点击忘记密码'''
     def test_login_case2(self):
+        '''忘记密码点击'''
         self.login.login(is_forget = True)
         result = self.login.is_refresh_exsit()
         # self.assertTrue(result)
